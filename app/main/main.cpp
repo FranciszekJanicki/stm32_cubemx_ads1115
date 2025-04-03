@@ -3,6 +3,8 @@
 #include "gpio.h"
 #include "i2c.h"
 #include "usart.h"
+#include <cstdio>
+#include <utility>
 
 namespace {
 
@@ -24,7 +26,6 @@ int main()
     MX_I2C1_Init();
     MX_USART2_UART_Init();
 
-    using namespace Utility;
     using namespace ADS1115;
 
     auto i2c_device = I2CDevice{&hi2c1, std::to_underlying(DevAddress::ADDR_GND)};

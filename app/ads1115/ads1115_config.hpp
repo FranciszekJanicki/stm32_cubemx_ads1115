@@ -2,9 +2,12 @@
 #define ADS1115_CONFIG_HPP
 
 #include "ads1115_registers.hpp"
+#include "i2c_device.hpp"
 #include <cstdint>
 
 namespace ADS1115 {
+
+    using I2CDevice = STM32_Utility::I2CDevice;
 
     enum struct DevAddress : std::uint8_t {
         ADDR_GND = 0b1001000,

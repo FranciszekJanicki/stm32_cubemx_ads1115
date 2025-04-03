@@ -1,7 +1,6 @@
 #ifndef ADS1115_HPP
 #define ADS1115_HPP
 
-#include "../utility/i2c_device.hpp"
 #include "ads1115_config.hpp"
 #include "ads1115_registers.hpp"
 #include <optional>
@@ -10,8 +9,6 @@ namespace ADS1115 {
 
     struct ADS1115 {
     public:
-        using I2CDevice = Utility::I2CDevice;
-
         ADS1115() noexcept = default;
 
         ADS1115(I2CDevice&& i2c_device, Config const& config) noexcept;

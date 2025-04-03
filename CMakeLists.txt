@@ -22,7 +22,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
 add_subdirectory(cmake/stm32cubemx)
 add_subdirectory(app/main)
-add_subdirectory(app/utility)
+add_subdirectory(app/stm32_utility)
 add_subdirectory(app/ads1115)
 
 target_compile_options(stm32cubemx INTERFACE 

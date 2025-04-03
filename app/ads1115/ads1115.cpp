@@ -1,5 +1,4 @@
 #include "ads1115.hpp"
-#include "utility.hpp"
 
 namespace ADS1115 {
 

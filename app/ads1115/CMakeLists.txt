@@ -5,12 +5,11 @@ target_sources(ads1115 PRIVATE
 )
 
 target_include_directories(ads1115 PUBLIC 
-    "."
-    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_SOURCE_DIR}/app/stm32_utility
 )
 
 target_link_libraries(ads1115 PRIVATE
-    utility
+    stm32_utility
     stm32cubemx
 )
 
